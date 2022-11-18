@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(41, 30, 27);
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 4px red, -2px -2px 4px rgb(1, 225, 255);
+    margin-top: 5%;
+    font-size: 250%;    
+}
+
+b{
+    text-align: center;
+    text-shadow: -2px -2px  3px rgb(63, 20, 253);
+    font-size: 115%;
+    margin-top: 3%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(250, 250, 244);
+    
+}
+article{
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 70vw;
+    height: 55%;
+    box-shadow: 5px 5px 40px;   /* Sombra con un desenfoque casi disipado */;
+}
+form{
+    width: 90%;
+    padding: auto;
+    margin: auto;
+    text-align: center; 
+}
+.reloj{
+    background-color : Black; 
+    width: 100%;
+    height: 35vh;
+    color : White; 
+    font-size : 220%;
+    text-align: center; 
+    padding: 4%;
+    letter-spacing: 8px;
+    
+    
+}
+
+.sombraGuaza {
+      color: #ffffff;
+   
+      left: 0;
+    
+      letter-spacing: 5px;
+    
+    text-align: center;
+    
+    text-transform: uppercase;
+    
+      width: 100%;
+    
+      animation: move linear 2000ms infinite;
+    
+      z-index: 2
+    
+    }
+    
+    /*Animación para rotar las sombras*/
+    
+    @keyframes move {
+    
+      0% {
+    
+        text-shadow:
+    
+          4px -4px 0 #da0641,
+    
+          3px -3px 0 #da0641,
+    
+         2px -2px 0 #da0641,
+    
+          1px -1px 0 #da0641,
+    
+          -4px 4px 0 #13f1fc,
+    
+          -3px 3px 0 #13f1fc,
+    
+          -2px 2px 0 #13f1fc,
+    
+          -1px 1px 0 #13f1fc
+    
+        ;
+    
+      }
+    
+      25% {
+    
+        text-shadow:
+    
+          -4px -4px 0 #13f1fc,
+    
+         -3px -3px 0 #13f1fc,
+    
+          -2px -2px 0 #13f1fc,
+    
+          -1px -1px 0 #13f1fc,
+    
+          4px 4px 0 #da0641,
+    
+          3px 3px 0 #da0641,
+    
+          2px 2px 0 #da0641,
+    
+          1px 1px 0 #da0641
+    
+        ;
+    
+      }
+    
+      50% {
+    
+        text-shadow:
+    
+          -4px 4px 0 #da0641,
+    
+          -3px 3px 0 #da0641,
+    
+          -2px 2px 0 #da0641,
+    
+          -1px 1px 0 #da0641,
+    
+          4px -4px 0 #13f1fc,
+    
+          3px -3px 0 #13f1fc,
+    
+          2px -2px 0 #13f1fc,
+    
+          1px -1px 0 #13f1fc
+    
+        ;
+    
+      }
+    
+      75% {
+    
+        text-shadow:
+    
+          4px 4px 0 #13f1fc,
+    
+          3px 3px 0 #13f1fc,
+    
+          2px 2px 0 #13f1fc,
+    
+          1px 1px 0 #13f1fc,
+    
+          -4px -4px 0 #da0641,
+    
+          -3px -3px 0 #da0641,
+    
+          -2px -2px 0 #da0641,
+    
+          -1px -1px 0 #da0641
+    
+        ;
+    
+      }
+    
+      100% {
+    
+        text-shadow:
+    
+          4px -4px 0 #da0641,
+    
+          3px -3px 0 #da0641,
+    
+          2px -2px 0 #da0641,
+    
+          1px -1px 0 #da0641,
+    
+         -4px 4px 0 #13f1fc,
+    
+          -3px 3px 0 #13f1fc,
+    
+          -2px 2px 0 #13f1fc,
+    
+          -1px 1px 0 #13f1fc
+    
+        ;
+    
+      }
+    
+    }
+    
